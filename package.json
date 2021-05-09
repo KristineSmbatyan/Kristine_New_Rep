@@ -1,0 +1,29 @@
+{
+  "name": "Kristine_New_Rep",
+  "version": "0.0.4",
+  "description": "WELCOME!",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KristineSmbatyan/Kristine_New_Rep.git"
+  },
+  "keywords": ["CSE120"],
+  "author": "Kristine Smbatyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KristineSmbatyan/Kristine_New_Rep/issues"
+  },
+  "homepage": "https://github.com/KristineSmbatyan/Kristine_New_Rep#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
