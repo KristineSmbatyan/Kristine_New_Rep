@@ -19,11 +19,37 @@ app.get("/dashboard", (req, res) => {
 	res.render("dashboard");
 })
 app.get("/", (req, res) => {
+  res.render("admin");
+})
+app.get("/admin", (req, res) => {
+  res.render("admin");
+})
+
+app.get("/", (req, res) => {
   res.render("Hobby");
 })
 app.get("/Hobby", (req, res) => {
   res.render("Hobby");
 })
+app.get("/", (req, res) => {
+  res.render("edit_hobby");
+})
+app.get("/edit_hobby", (req, res) => {
+  res.render("edit_hobby");
+})
+app.get("/", (req, res) => {
+  res.render("edit_book");
+})
+app.get("/edit_book", (req, res) => {
+  res.render("edit_book");
+})
+app.get("/", (req, res) => {
+  res.render("Book");
+})
+app.get("/Book", (req, res) => {
+  res.render("Book");
+})
+
 
 app.get("/login", (req, res) => {
 	res.render("login");
