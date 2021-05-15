@@ -10,12 +10,19 @@ app.set('view engine', 'ejs');
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.static('public'));
+app.use(express.static('images'));
 
 app.get("/", (req, res) => {
 	res.render("dashboard");
 })
 app.get("/dashboard", (req, res) => {
 	res.render("dashboard");
+})
+app.get("/", (req, res) => {
+  res.render("Hobby");
+})
+app.get("/Hobby", (req, res) => {
+  res.render("Hobby");
 })
 
 app.get("/login", (req, res) => {
@@ -42,14 +49,6 @@ app.post('/login', (req,res)=>{
 
 })
 
-app.get('/profile', checkAuthenticated, (req, res)=>{
-    let user = req.user;
-    res.render('profile', {user});
-})
-
-app.get('/protectedRoute', checkAuthenticated, (req,res)=>{
-    res.send('This route is protected')
-})
 
 app.get('/logout', (req, res)=>{
     res.clearCookie('session-token');
